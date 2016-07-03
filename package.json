@@ -1,7 +1,7 @@
 {
-  "name": "24-game-client",
+  "name": "24-game",
   "version": "0.0.1",
-  "description": "Client for the 24 Game",
+  "description": "Implementation of the 24 Game in React + Redux",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arjandepooter/24-game-client.git"
+    "url": "git+https://github.com/arjandepooter/24-game.git"
   },
   "author": "Arjan de Pooter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arjandepooter/24-game-client/issues"
+    "url": "https://github.com/arjandepooter/24-game/issues"
   },
-  "homepage": "https://github.com/arjandepooter/24-game-client#readme",
+  "homepage": "https://github.com/arjandepooter/24-game#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.10.4",
