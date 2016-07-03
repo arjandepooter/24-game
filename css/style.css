@@ -1,0 +1,37 @@
+.c-control {
+  border: 1px solid;
+  border-radius: 2px;
+  margin: 7px 0px 7px 0px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30pt;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c-operator {
+  background-color: #9ad3de;
+}
+
+.c-number {
+  background-color: #89bdd3;
+}
+
+.c-control.is-disabled {
+  background-color: #e3e3e3;
+  cursor: not-allowed;
+}
+
+.c-display {
+  background-color: rgb(247, 121, 88);
+  border: 3px solid;
+  border-radius: 2px;
+  font-size: 30pt;
+  margin-bottom: 20px;
+  padding: 5px;
+  user-select: none;
+}
+
+.c-display.is-valid {
+  background-color: rgb(184, 242, 167);
+}

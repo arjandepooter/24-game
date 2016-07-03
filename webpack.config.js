@@ -25,11 +25,12 @@ module.exports = {
       {
         exclude: /node_modules/,
         loader: 'react-hot',
-        test: /\.jsx$/,
+        test: /\.jsx?$/,
       },
       {
         exclude: /node_modules/,
         loader: 'babel',
+        test: /\.jsx?$/,
         query: {
           presets: ['react', 'es2015', 'stage-0'],
         },

@@ -2,7 +2,16 @@ import '../css/style.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-const App = () => <div>Hello Wold</div>;
+import App from './components/app';
+import createStore from './store';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const store = createStore();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);
