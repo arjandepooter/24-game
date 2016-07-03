@@ -1,3 +1,4 @@
+const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -33,6 +34,10 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0'],
         },
       },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!postcss-loader',
+      },
     ],
   },
   resolve: {
@@ -40,6 +45,11 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+  ],
+  postcss: [
+    autoprefixer({
+      browsers: ['last 2 versions'],
+    }),
   ],
   devServer: {
     historyApiFallback: true,
